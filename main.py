@@ -78,10 +78,14 @@ rag_system.answer_query("文档的内容是什么？")
 
 """
 git init
-git add 
-git commit -m "first commit"
+
 git branch -M main
 git remote add origin git@github.com:skl519/rag-llm-share.git
+git add main.py
+git commit -m "first commit"
 git push -u origin main
 
+pip install haystack-ai
+pip install torch==2.5.1 torchvision==0.20.1
+modelscope download --model Qwen/Qwen2.5-0.5B-Instruct --local_dir ./models-weight/Qwen2.5-0.5B-Instruct
 """
